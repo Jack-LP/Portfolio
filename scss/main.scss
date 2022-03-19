@@ -1,0 +1,145 @@
+@import "variables";
+@import "mixins";
+
+*, ::before, ::after{
+    @include body-reset;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @include heading-reset;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.underlineAnimation{
+    @include underline-animation;
+}
+
+body{
+    background-color: $offWhite;
+}
+
+.header{
+    background-image: url(../img/bgImage.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    .container{
+        display: grid;
+        grid-template-rows: 10vh 80vh;
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 0;
+            img{
+                height: auto;
+                width: 3.1rem;
+            }
+            .nav-ul{
+                display: none;
+            }
+            button{
+                outline: none;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+        .title-text{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            align-self: center;
+            h1{
+                color: $white;
+                font-family: $bodyFont;
+                font-size: $mobileTitleSize;
+                line-height: 1;
+            }
+            h2{
+                color: $lightGrey;
+                font-family: $subFont;
+                font-size: $mobileSubSize;
+                font-weight: 400;
+            }
+            button{
+                @include mobile-view-button;
+            }
+        }
+    }
+}
+
+
+// Tablet Sizes
+@media screen and (min-width: 700px){
+    .header{
+        .container{
+            width: calc(min(80%, 100rem));
+            .title-text{
+                h1{
+                    font-size: $tabletTitleSize;
+                }
+                h2{
+                    font-size: $tabletSubSize;
+                }
+                button{
+                    @include tablet-view-button;
+                }
+            }
+        }
+    } 
+}
+
+// Desktop Sizes
+@media screen and (min-width: 1100px){
+    .header{
+        .container{
+            width: calc(min(60%, 100rem));
+            nav{
+                .menu-button{
+                    display: none;
+                }
+                .nav-ul{
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    gap: 6rem;
+                    li{
+                        a{
+                            color: $lightGrey;
+                            text-decoration: none;
+                            font-size: $linkSize;
+                            font-family: $subFont;
+                            letter-spacing: .3rem;
+                        }
+                    }
+                }
+            }
+            .title-text{
+                h1{
+                    font-size: $titleSize;
+                }
+                h2{
+                    font-size: $subSize;
+                }
+                button{
+                    @include view-button;
+                }
+            }
+        }
+    } 
+}

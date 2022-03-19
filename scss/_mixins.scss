@@ -1,0 +1,92 @@
+@mixin body-reset{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin heading-reset{
+    margin:0;
+    padding:0;
+}
+
+@mixin view-button {
+    width: 17.4rem;
+    outline: none;
+    border: none;
+    font-size: $buttonSize;
+    background-color: $white;
+    border-radius: 10rem;
+    color: $darkGrey;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: $subFont;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@mixin tablet-view-button{
+    width: 16rem;
+    outline: none;
+    border: none;
+    font-size: $tabletButtonSize;
+    background-color: $white;
+    border-radius: 10rem;
+    color: $darkGrey;
+    padding: 1.2rem 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: $subFont;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@mixin mobile-view-button{
+    width: 11rem;
+    outline: none;
+    border: none;
+    font-size: $mobileButtonSize;
+    background-color: $white;
+    border-radius: 10rem;
+    color: $darkGrey;
+    padding: 1.2rem 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: $subFont;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@mixin underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $celadon-blue;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;  
+    }
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
