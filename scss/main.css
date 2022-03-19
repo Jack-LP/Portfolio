@@ -21,6 +21,14 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -55,6 +63,12 @@ img {
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 0.2rem solid #468fafff;
+  padding-bottom: .5rem;
 }
 
 body {
@@ -160,7 +174,247 @@ body {
   font-weight: 600;
 }
 
+.about-me .container .about-me-text {
+  margin: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+
+.about-me .container .about-me-text h1 {
+  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+.about-me .container .about-me-text p {
+  font-size: 1.8rem;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.recent-work {
+  margin: 20rem 0;
+}
+
+.recent-work .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10rem;
+}
+
+.recent-work .container h1 {
+  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+.recent-work .container .card {
+  background-color: #fff;
+  border-radius: 1.8rem;
+  -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+}
+
+.recent-work .container .card img {
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+}
+
+.recent-work .container .card .card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+}
+
+.recent-work .container .card .card-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+}
+
+.recent-work .container .card .card-text p {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.recent-work .container .card .card-text .card-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.recent-work .container .card .card-text .card-buttons button {
+  width: 11rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  color: #2d2d2d;
+  padding: 1.2rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid #468fafff;
+}
+
+.skills {
+  margin: 20rem 0;
+}
+
+.skills .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.skills .container h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.6rem;
+  color: #333;
+}
+
+.skills .container .skills-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 10%;
+}
+
+footer {
+  height: 100vh;
+  background-image: url(../img/footerImage.png);
+  background-size: cover;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+}
+
+footer .container h1 {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 3.6rem;
+  text-align: center;
+  line-height: 1;
+}
+
+footer .container button {
+  width: 11rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 10rem;
+  color: #2d2d2d;
+  padding: 1.2rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent;
+  color: #fff;
+  border: 4px solid #468fafff;
+}
+
+footer .container .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
 @media screen and (min-width: 700px) {
+  .container {
+    width: calc(min(80%, 100rem));
+  }
   .header .container {
     width: calc(min(80%, 100rem));
   }
@@ -195,11 +449,113 @@ body {
     text-transform: uppercase;
     font-weight: 500;
   }
+  .about-me .container .about-me-text h1 {
+    font-size: 5rem;
+  }
+  .about-me .container .about-me-text p {
+    font-size: 2.3rem;
+  }
+  .recent-work .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .recent-work .container h1 {
+    font-size: 5rem;
+    font-family: "Playfair Display", serif;
+    color: #333;
+  }
+  .recent-work .container .card .card-text h2 {
+    font-size: 4.8rem;
+  }
+  .recent-work .container .card .card-text p {
+    font-size: 2rem;
+  }
+  .recent-work .container .card .card-text .card-buttons button {
+    width: 16rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    color: #2d2d2d;
+    padding: 1.2rem 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: transparent;
+    border: 3px solid #468fafff;
+  }
+  .skills .container h1 {
+    font-size: 5rem;
+  }
+  .skills .container .skills-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 5%;
+  }
+  .skills .container .skills-grid img {
+    height: auto;
+    width: 20rem;
+  }
+  footer .container h1 {
+    font-size: 5rem;
+  }
+  footer .container button {
+    width: 16rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    color: #2d2d2d;
+    padding: 1.2rem 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    border: 4px solid #468fafff;
+  }
 }
 
 @media screen and (min-width: 1100px) {
+  .container {
+    width: calc(min(70%, 100rem));
+  }
   .header .container {
-    width: calc(min(60%, 100rem));
+    width: calc(min(70%, 100rem));
   }
   .header .container nav .menu-button {
     display: none;
@@ -251,6 +607,164 @@ body {
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
+  }
+  .about-me .container .about-me-text {
+    margin: 30rem 0;
+  }
+  .about-me .container .about-me-text h1 {
+    font-size: 6.4rem;
+  }
+  .about-me .container .about-me-text p {
+    font-size: 2.6rem;
+  }
+  .recent-work {
+    margin: 30rem 0;
+  }
+  .recent-work .container h1 {
+    font-size: 6.4rem;
+    font-family: "Playfair Display", serif;
+    color: #333;
+  }
+  .recent-work .container .card {
+    width: 111rem;
+    height: 35rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .recent-work .container .card:first-of-type {
+    margin-top: -4rem;
+  }
+  .recent-work .container .card:nth-child(2n-7) img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    border-top-left-radius: 1.8rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.8rem;
+    border-bottom-right-radius: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .recent-work .container .card:nth-child(2n-7) .card-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .recent-work .container .card img {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 1.8rem;
+    border-top-right-radius: 1.8rem;
+    height: auto;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .recent-work .container .card .card-text {
+    padding: 5rem 4rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    gap: 4rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .recent-work .container .card .card-text h2 {
+    font-size: 4.3rem;
+  }
+  .recent-work .container .card .card-text p {
+    font-size: 1.7rem;
+    color: #8C93BD;
+  }
+  .recent-work .container .card .card-text .card-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 7rem;
+  }
+  .recent-work .container .card .card-text .card-buttons button {
+    width: 17.4rem;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    color: #2d2d2d;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: transparent;
+    border: 4px solid #468fafff;
+  }
+  .skills .container h1 {
+    font-size: 5rem;
+  }
+  .skills .container .skills-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .skills .container .skills-grid img {
+    height: auto;
+    width: 15rem;
+    background-color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 1.3rem;
+  }
+  footer .container h1 {
+    font-size: 6.4rem;
+  }
+  footer .container button {
+    width: 17.4rem;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    color: #2d2d2d;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    border: 4px solid #468fafff;
   }
 }
 /*# sourceMappingURL=main.css.map */
