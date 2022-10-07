@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import CustomContainer from '../components/CustomContainer';
 import Navbar from '../components/common/Navbar';
 import Hero from '../components/Hero';
+import HeadingText from '../components/HeadingText';
 
 export default function Home() {
   return (

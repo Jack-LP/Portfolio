@@ -1,13 +1,14 @@
 import React from 'react';
-import { Flex, Text, Link, Container } from '@chakra-ui/react';
+import { Flex, Text, Link } from '@chakra-ui/react';
+import CustomContainer from '../CustomContainer';
 
 const Navbar = () => {
   return (
-    <Container maxW='1200px' pt='25px'>
+    <CustomContainer pt='25px'>
       <Flex
         justify='space-between'
         alignItems='center'
-        bg='charcoal.300'
+        bg='charcoalAlpha.100'
         p='5'
         backdropFilter='blur(8px)'
         rounded='lg'
@@ -20,7 +21,7 @@ const Navbar = () => {
         </Flex>
         <Text>toggle color</Text>
       </Flex>
-    </Container>
+    </CustomContainer>
   );
 };
 
