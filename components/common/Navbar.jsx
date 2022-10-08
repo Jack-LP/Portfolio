@@ -1,8 +1,11 @@
 import React from 'react';
-import { Flex, Text, Link } from '@chakra-ui/react';
+import { Flex, Text, Link, Switch, useColorMode } from '@chakra-ui/react';
 import CustomContainer from '../CustomContainer';
+import { Moon, Sun } from 'akar-icons';
 
 const Navbar = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <CustomContainer pt='25px'>
       <Flex
@@ -19,7 +22,10 @@ const Navbar = () => {
           <Link>About Me</Link>
           <Link>Contact</Link>
         </Flex>
-        <Text>toggle color</Text>
+        <Flex alignItems='center' gap='2'>
+          {colorMode === 'dark' ? <Moon /> : <Sun />}
+          <Switch onChange={() => toggleColorMode()} />
+        </Flex>
       </Flex>
     </CustomContainer>
   );

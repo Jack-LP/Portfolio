@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import CustomContainer from '../components/CustomContainer';
 import Navbar from '../components/common/Navbar';
-import Hero from '../components/Hero';
-import HeadingText from '../components/HeadingText';
+import Hero from '../components/hero/Hero';
+import MyWork from '../components/my-work/MyWork';
 
 export default function Home() {
   return (
@@ -15,8 +14,9 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
       <Hero />
+      <Navbar />
+      <MyWork />
     </>
   );
 }
