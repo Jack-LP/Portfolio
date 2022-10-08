@@ -17,20 +17,20 @@ import {
 } from '@chakra-ui/react';
 import { GithubFill, LinkOut } from 'akar-icons';
 
-const ProjectCard = ({ img, imgLg, title, links, flipped }) => {
+const ProjectCard = ({ img, imgLg, title, github, liveSite, desc }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Grid templateColumns='repeat(2, 1fr)' p='4' rounded='xl' bg='charcoal.200'>
-      <Image src={img} alt='mintab' rounded='xl' />
+      <Image src={img} alt={title} rounded='xl' />
       <Flex direction='column' gap='4' justifyContent='center' px='12'>
-        <Heading size='2xl'>{title}</Heading>
+        <Heading size='xl'>{title}</Heading>
         <Button onClick={onOpen}>View</Button>
         <Flex alignItems='center' gap='2'>
-          <Link href={links[0]}>
+          <Link href={github}>
             <GithubFill />
           </Link>
-          <Link href={links[1]}>
+          <Link href={liveSite}>
             <LinkOut />
           </Link>
         </Flex>
@@ -45,12 +45,7 @@ const ProjectCard = ({ img, imgLg, title, links, flipped }) => {
           <ModalBody py='6'>
             <Flex direction='column' gap='4'>
               <Image src={imgLg} alt='' rounded='lg' />
-              <Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                distinctio necessitatibus beatae quis dignissimos totam
-                excepturi dicta, hic consequuntur culpa doloremque cupiditate
-                voluptates ipsa dolor? Eaque quaerat harum neque laudantium!
-              </Text>
+              <Text>{desc}</Text>
               <Flex gap='2' justifyContent='space-between'>
                 <Button leftIcon={<GithubFill />} w='full'>
                   GitHub

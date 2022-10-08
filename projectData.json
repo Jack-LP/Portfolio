@@ -1,26 +1,29 @@
 [
   {
+    "id": 1,
     "title": "mintab",
     "img": "img/mintab.jpg",
-    "img-lg": "img/mintab-lg.jpg",
+    "imgLg": "img/mintab-lg.jpg",
     "github": "https://github.com/Jack-LP/mintab",
-    "live-site": "https://github.com/Jack-LP/mintab",
+    "liveSite": "https://github.com/Jack-LP/mintab",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod delectus, repellat quidem numquam necessitatibus ratione autem cum ipsam! Magnam voluptate distinctio voluptatibus, debitis dolores, nesciunt fuga accusantium tenetur earum repellendus fugit consequuntur. Molestiae sed cumque laboriosam veniam atque ea natus accusantium, cum perspiciatis amet esse repudiandae architecto vero! Non."
   },
   {
+    "id": 2,
     "title": "game grid",
-    "img": "img/game-grid.jpg",
-    "img-lg": "img/game-grid-lg.jpg",
+    "img": "img/gamegrid.jpg",
+    "imgLg": "img/gamegrid-lg.jpg",
     "github": "https://github.com/Jack-LP/Game-Grid",
-    "live-site": "https://github.com/Jack-LP/mintab",
+    "liveSite": "https://github.com/Jack-LP/mintab",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod delectus, repellat quidem numquam necessitatibus ratione autem cum ipsam! Magnam voluptate distinctio voluptatibus, debitis dolores, nesciunt fuga accusantium tenetur earum repellendus fugit consequuntur. Molestiae sed cumque laboriosam veniam atque ea natus accusantium, cum perspiciatis amet esse repudiandae architecto vero! Non."
   },
   {
+    "id": 3,
     "title": "audiophile",
     "img": "img/audiophile.jpg",
-    "img-lg": "img/audiophile-lg.jpg",
+    "imgLg": "img/audiophile-lg.jpg",
     "github": "https://github.com/Jack-LP/audiophile",
-    "live-site": "https://github.com/Jack-LP/mintab",
+    "liveSite": "https://github.com/Jack-LP/mintab",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod delectus, repellat quidem numquam necessitatibus ratione autem cum ipsam! Magnam voluptate distinctio voluptatibus, debitis dolores, nesciunt fuga accusantium tenetur earum repellendus fugit consequuntur. Molestiae sed cumque laboriosam veniam atque ea natus accusantium, cum perspiciatis amet esse repudiandae architecto vero! Non."
   }
 ]

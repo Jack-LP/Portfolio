@@ -1,4 +1,5 @@
 import React from 'react';
+import projecData from '../../projectData.json';
 import { Heading, Flex, Divider, Grid } from '@chakra-ui/react';
 import CustomContainer from '../CustomContainer';
 import ProjectCard from './ProjectCard';
@@ -18,50 +19,18 @@ const MyWork = () => {
           />
         </Flex>
         <Grid templateColumns='repeat(2, 1fr)' gap='4'>
-          <ProjectCard
-            img={'img/mintab.jpg'}
-            imgLg={'img/mintab-lg.jpg'}
-            title={'mintab'}
-            links={[
-              'https://github.com/Jack-LP/mintab',
-              'https://github.com/Jack-LP/mintab',
-            ]}
-          />
-          <ProjectCard
-            img={'img/mintab.jpg'}
-            title={'mintab'}
-            links={[
-              'https://github.com/Jack-LP/mintab',
-              'https://github.com/Jack-LP/mintab',
-            ]}
-          />
-          <ProjectCard
-            img={'img/mintab.jpg'}
-            title={'mintab'}
-            links={[
-              'https://github.com/Jack-LP/mintab',
-              'https://github.com/Jack-LP/mintab',
-            ]}
-          />
-          <ProjectCard
-            img={'img/mintab.jpg'}
-            title={'mintab'}
-            links={[
-              'https://github.com/Jack-LP/mintab',
-              'https://github.com/Jack-LP/mintab',
-            ]}
-          />
+          {projecData.map((item) => (
+            <ProjectCard
+              key={item.id}
+              img={item.img}
+              imgLg={item.imgLg}
+              title={item.title}
+              github={item.github}
+              liveSite={item.liveSite}
+              desc={item.desc}
+            />
+          ))}
         </Grid>
-        {/* 
-        <ProjectCard
-          img={'img/mintab.jpg'}
-          title={'mintab'}
-          links={[
-            'https://github.com/Jack-LP/mintab',
-            'https://github.com/Jack-LP/mintab',
-          ]}
-          flipped
-        /> */}
       </Flex>
     </CustomContainer>
   );
