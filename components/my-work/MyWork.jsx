@@ -11,13 +11,14 @@ const MyWork = () => {
         <Flex></Flex>
         <ProjectCard
           img={'img/mintab.jpg'}
+          imgLg={'img/mintab-lg.jpg'}
           title={'mintab'}
           links={[
             'https://github.com/Jack-LP/mintab',
             'https://github.com/Jack-LP/mintab',
           ]}
         />
-        <ProjectCard
+        {/* <ProjectCard
           img={'img/mintab.jpg'}
           title={'mintab'}
           links={[
@@ -33,7 +34,7 @@ const MyWork = () => {
             'https://github.com/Jack-LP/mintab',
             'https://github.com/Jack-LP/mintab',
           ]}
-        />
+        /> */}
       </Flex>
     </CustomContainer>
   );
