@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from '@chakra-ui/react';
 
-const CustomContainer = ({ children, pt }) => {
+const CustomContainer = ({ children }) => {
   return (
-    <Container maxW='1200px' pt={pt}>
+    <Container maxW='1300px' position='relative' p='0'>
       {children}
     </Container>
   );

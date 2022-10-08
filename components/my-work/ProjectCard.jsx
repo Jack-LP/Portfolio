@@ -22,7 +22,7 @@ const ProjectCard = ({ img, imgLg, title, links, flipped }) => {
 
   return (
     <Grid templateColumns='repeat(2, 1fr)' p='4' rounded='xl' bg='charcoal.200'>
-      <Image src={img} alt='mintab' rounded='xl' order={flipped ? '1' : '0'} />
+      <Image src={img} alt='mintab' rounded='xl' />
       <Flex direction='column' gap='4' justifyContent='center' px='12'>
         <Heading size='2xl'>{title}</Heading>
         <Button onClick={onOpen}>View</Button>
