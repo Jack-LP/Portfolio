@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 const MyWork = () => {
   return (
     <CustomContainer>
-      <Flex direction='column' gap='6' alignItems='start'>
+      <Flex direction='column' gap='6'>
         <Flex direction='column'>
           <Heading size='xl'>My Work</Heading>
           <Divider

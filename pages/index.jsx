@@ -1,6 +1,10 @@
 import Head from 'next/head';
+import { Flex } from '@chakra-ui/react';
 import Hero from '../components/hero/Hero';
 import MyWork from '../components/my-work/MyWork';
+import AboutMe from '../components/about-me/AboutMe';
+import Contact from '../components/contact/Contact';
+import Footer from '../components/footer/Footer';
 
 export default function Home() {
   return (
@@ -14,8 +18,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <MyWork />
+      <Flex direction='column' gap='100px' my='20'>
+        <MyWork />
+        <AboutMe />
+        <Contact />
+      </Flex>
+      {/* <Footer /> */}
     </>
   );
 }
-1;
