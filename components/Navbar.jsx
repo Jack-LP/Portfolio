@@ -33,7 +33,8 @@ const Navbar = () => {
             alt='JP'
             w='8'
             position='absolute'
-            top='1.5'
+            top='8px'
+            left='3'
             _hover={{
               transform: 'rotate(-10deg)',
             }}
