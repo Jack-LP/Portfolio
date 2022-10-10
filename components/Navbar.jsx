@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import {
   Flex,
   Image,
@@ -8,10 +9,10 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import CustomContainer from './CustomContainer';
-import { Moon, Sun } from 'akar-icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
 
   return (
     <CustomContainer>
@@ -19,7 +20,7 @@ const Navbar = () => {
         justify='space-between'
         alignItems='center'
         bg='charcoalAlpha.100'
-        p='5'
+        p='3'
         backdropFilter='blur(8px)'
         rounded='lg'
         position='absolute'
@@ -46,14 +47,25 @@ const Navbar = () => {
           left='50%'
           transform='translate(-50%, -50%)'
         >
-          <Link>My Work</Link>
-          <Link>About Me</Link>
-          <Link>Contact</Link>
+          <Link href='#myWork'>My Work</Link>
+          <Link href='#aboutMe'>About Me</Link>
+          <Link href='#contact'>Contact</Link>
         </Flex>
-        <IconButton
-          icon={useColorModeValue(<Moon />, <Sun />)}
-          onClick={() => toggleColorMode()}
-        />
+        <AnimatePresence exitBeforeEnter initial={false}>
+          <motion.div
+            style={{ display: 'inline-block' }}
+            key={useColorModeValue('light', 'dark')}
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 20, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <IconButton
+              icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+              onClick={() => toggleColorMode()}
+            />
+          </motion.div>
+        </AnimatePresence>
       </Flex>
     </CustomContainer>
   );

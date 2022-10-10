@@ -5,18 +5,12 @@ import { Flex, Heading, Divider, Grid, Image, Text } from '@chakra-ui/react';
 const AboutMe = () => {
   return (
     <CustomContainer>
-      <Flex direction='column' gap='6'>
+      <Flex direction='column' gap='6' id='aboutMe'>
         <Flex direction='column'>
           <Heading size='xl'>About Me</Heading>
-          <Divider
-            w='110px'
-            border='3px'
-            borderColor='teal.500'
-            mt='-1'
-            zIndex='-1'
-          />
+          <Divider w='110px' border='3px' borderColor='teal.500' mt='-1' />
         </Flex>
-        <Grid templateColumns='1fr 2fr'>
+        <Flex bg='charcoal.200' py='4' px='20' rounded='xl' gap='20'>
           <Image src='img/jp-logo.svg' alt='JP' w='200px' placeSelf='center' />
           <Text placeSelf='center' lineHeight='6' fontSize='18px'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat,
@@ -32,7 +26,7 @@ const AboutMe = () => {
             provident inventore delectus modi iste earum, ab quidem, nulla ut
             aut, exercitationem vero.
           </Text>
-        </Grid>
+        </Flex>
       </Flex>
     </CustomContainer>
   );

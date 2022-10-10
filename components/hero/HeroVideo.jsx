@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, useColorModeValue } from '@chakra-ui/react';
 
 const HeroVideo = () => {
   useEffect(() => {
@@ -29,7 +29,10 @@ const HeroVideo = () => {
         w='100vw'
         h='100vh'
         position='absolute'
-        bg='linear-gradient(0deg, rgba(37,37,37,1) 0%, transparent 50%)'
+        bg={`linear-gradient(0deg, ${useColorModeValue(
+          '#EDF2F7',
+          '#252525'
+        )} 0%, transparent 50%)`}
         zIndex='-1'
         backdropFilter='blur(4px)'
       />
