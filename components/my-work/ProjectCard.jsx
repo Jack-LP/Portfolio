@@ -14,10 +14,12 @@ import {
   ModalBody,
   ModalCloseButton,
   Text,
+  Tag,
+  Tooltip,
 } from '@chakra-ui/react';
 import { GithubFill, LinkOut } from 'akar-icons';
 
-const ProjectCard = ({ img, imgLg, title, github, liveSite, desc }) => {
+const ProjectCard = ({ img, imgLg, title, github, liveSite, desc, stack }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -27,12 +29,16 @@ const ProjectCard = ({ img, imgLg, title, github, liveSite, desc }) => {
         <Heading size='xl'>{title}</Heading>
         <Button onClick={onOpen}>View</Button>
         <Flex alignItems='center' gap='2'>
-          <Link href={github}>
-            <GithubFill />
-          </Link>
-          <Link href={liveSite}>
-            <LinkOut />
-          </Link>
+          <Tooltip label='Source Code'>
+            <Link href={github}>
+              <GithubFill />
+            </Link>
+          </Tooltip>
+          <Tooltip label='Live Site'>
+            <Link href={liveSite}>
+              <LinkOut />
+            </Link>
+          </Tooltip>
         </Flex>
       </Flex>
       <Modal isOpen={isOpen} onClose={onClose} isCentered size='3xl'>
@@ -45,6 +51,11 @@ const ProjectCard = ({ img, imgLg, title, github, liveSite, desc }) => {
           <ModalBody py='6'>
             <Flex direction='column' gap='4'>
               <Image src={imgLg} alt='' rounded='lg' />
+              <Flex gap='2'>
+                {stack.map((item) => (
+                  <Tag key='item'>{item}</Tag>
+                ))}
+              </Flex>
               <Text>{desc}</Text>
               <Flex gap='2' justifyContent='space-between'>
                 <Button leftIcon={<GithubFill />} w='full'>

@@ -6,7 +6,8 @@
     "imgLg": "img/mintab-lg.jpg",
     "github": "https://github.com/Jack-LP/mintab",
     "liveSite": "https://github.com/Jack-LP/mintab",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod delectus, repellat quidem numquam necessitatibus ratione autem cum ipsam! Magnam voluptate distinctio voluptatibus, debitis dolores, nesciunt fuga accusantium tenetur earum repellendus fugit consequuntur. Molestiae sed cumque laboriosam veniam atque ea natus accusantium, cum perspiciatis amet esse repudiandae architecto vero! Non."
+    "desc": "Mintab is a customisable homepage for your browser, providing quick access to bookmarked sites. Every display component is customised through a settings drawer built with Chakra UI. User settings are managed through state and context, and then stored in localStorage to persist through page refreshes.",
+    "stack": ["NextJS", "Chakra UI"]
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "imgLg": "img/gamegrid-lg.jpg",
     "github": "https://github.com/Jack-LP/Game-Grid",
     "liveSite": "https://github.com/Jack-LP/mintab",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod delectus, repellat quidem numquam necessitatibus ratione autem cum ipsam! Magnam voluptate distinctio voluptatibus, debitis dolores, nesciunt fuga accusantium tenetur earum repellendus fugit consequuntur. Molestiae sed cumque laboriosam veniam atque ea natus accusantium, cum perspiciatis amet esse repudiandae architecto vero! Non."
+    "desc": "Game Grid is an e-commerce site and directory of free-to-play games. Data is pulled from the 'freetogame' API and displayed through various pages using React Router. Clicking on a game displays additional information within its own dynamic route. Games can also be searched for and filtered by genre.",
+    "stack": ["React", "Chakra UI", "React Router", "Freetogame API"]
   },
   {
     "id": 3,
@@ -24,6 +26,17 @@
     "imgLg": "img/audiophile-lg.jpg",
     "github": "https://github.com/Jack-LP/audiophile",
     "liveSite": "https://github.com/Jack-LP/mintab",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quod delectus, repellat quidem numquam necessitatibus ratione autem cum ipsam! Magnam voluptate distinctio voluptatibus, debitis dolores, nesciunt fuga accusantium tenetur earum repellendus fugit consequuntur. Molestiae sed cumque laboriosam veniam atque ea natus accusantium, cum perspiciatis amet esse repudiandae architecto vero! Non."
+    "desc": "Audiophile is an e-commerce site focused on audio related products. The design was provided by Frontend Mentor and built with Tailwind CSS. Product data is stored in a json file and displayed on corresponding product pages. A cart system is also present, using the React Context API which persists cart information within localStorage between page refreshes.",
+    "stack": ["NextJS", "Tailwind"]
+  },
+  {
+    "id": 3,
+    "title": "audiophile",
+    "img": "img/audiophile.jpg",
+    "imgLg": "img/audiophile-lg.jpg",
+    "github": "https://github.com/Jack-LP/audiophile",
+    "liveSite": "https://github.com/Jack-LP/mintab",
+    "desc": "",
+    "stack": ["NextJS", "Tailwind"]
   }
 ]

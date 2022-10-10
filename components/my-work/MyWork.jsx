@@ -28,6 +28,7 @@ const MyWork = () => {
               github={item.github}
               liveSite={item.liveSite}
               desc={item.desc}
+              stack={item.stack}
             />
           ))}
         </Grid>

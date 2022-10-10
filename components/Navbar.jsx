@@ -1,5 +1,12 @@
 import React from 'react';
-import { Flex, Image, Link, Switch, useColorMode } from '@chakra-ui/react';
+import {
+  Flex,
+  Image,
+  Link,
+  useColorMode,
+  IconButton,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import CustomContainer from './CustomContainer';
 import { Moon, Sun } from 'akar-icons';
 
@@ -32,15 +39,21 @@ const Navbar = () => {
             transition='.1s ease-out'
           />
         </Link>
-        <Flex gap='8'>
+        <Flex
+          gap='8'
+          position='absolute'
+          top='50%'
+          left='50%'
+          transform='translate(-50%, -50%)'
+        >
           <Link>My Work</Link>
           <Link>About Me</Link>
           <Link>Contact</Link>
         </Flex>
-        <Flex alignItems='center' gap='2'>
-          {colorMode === 'dark' ? <Moon /> : <Sun />}
-          <Switch onChange={() => toggleColorMode()} />
-        </Flex>
+        <IconButton
+          icon={useColorModeValue(<Moon />, <Sun />)}
+          onClick={() => toggleColorMode()}
+        />
       </Flex>
     </CustomContainer>
   );
