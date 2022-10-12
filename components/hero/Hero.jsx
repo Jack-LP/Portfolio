@@ -8,11 +8,9 @@ import { Box } from '@chakra-ui/react';
 const Hero = () => {
   return (
     <div className='h-screen'>
-      <Navbar />
       <HeroVideo />
-      {/* <CustomContainer>
-        <HeroText />
-      </CustomContainer> */}
+      <Navbar />
+      <HeroText />
     </div>
   );
 };

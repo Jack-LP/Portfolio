@@ -9,6 +9,10 @@ module.exports = {
       colors: {
         charcoal: '#1a191d',
       },
+      fontFamily: {
+        body: ['Poppins', 'sans-serif'],
+        mono: ['Roboto Mono', 'mono'],
+      },
     },
   },
   plugins: [],

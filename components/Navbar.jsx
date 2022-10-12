@@ -1,74 +1,17 @@
 import React from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import {
-  Flex,
-  Image,
-  Link,
-  useColorMode,
-  IconButton,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import CustomContainer from './CustomContainer';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+
+const links = ['home', 'work', 'tech', 'about'];
 
 const Navbar = () => {
-  const { toggleColorMode } = useColorMode();
-
   return (
-    <CustomContainer>
-      <Flex
-        justify='space-between'
-        alignItems='center'
-        bg='charcoalAlpha.100'
-        p='3'
-        backdropFilter='blur(8px)'
-        rounded='lg'
-        position='absolute'
-        w='100%'
-        top='6'
-      >
-        <Link>
-          <Image
-            src='img/jp-logo.svg'
-            alt='JP'
-            w='8'
-            position='absolute'
-            top='8px'
-            left='3'
-            _hover={{
-              transform: 'rotate(-10deg)',
-            }}
-            transition='.1s ease-out'
-          />
-        </Link>
-        <Flex
-          gap='8'
-          position='absolute'
-          top='50%'
-          left='50%'
-          transform='translate(-50%, -50%)'
-        >
-          <Link href='#myWork'>My Work</Link>
-          <Link href='#aboutMe'>About Me</Link>
-          <Link href='#contact'>Contact</Link>
-        </Flex>
-        <AnimatePresence exitBeforeEnter initial={false}>
-          <motion.div
-            style={{ display: 'inline-block' }}
-            key={useColorModeValue('light', 'dark')}
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 20, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <IconButton
-              icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-              onClick={() => toggleColorMode()}
-            />
-          </motion.div>
-        </AnimatePresence>
-      </Flex>
-    </CustomContainer>
+    <nav className='container mx-auto flex gap-10 font-mono justify-center text-lg bg-charcoal/30 rounded-xl backdrop-blur-md py-1'>
+      {links.map((link, i) => (
+        <a href='' key={link} className='flex flex-col items-end'>
+          <span className='text-xs text-white/75'>{`0${i + 1}`}</span>
+          <span className='-mt-1'>{`// ${link}`}</span>
+        </a>
+      ))}
+    </nav>
   );
 };
 
