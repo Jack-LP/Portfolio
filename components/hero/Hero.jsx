@@ -7,13 +7,13 @@ import { Box } from '@chakra-ui/react';
 
 const Hero = () => {
   return (
-    <Box h='100vh'>
+    <div className='h-screen'>
       <Navbar />
       <HeroVideo />
-      <CustomContainer>
+      {/* <CustomContainer>
         <HeroText />
-      </CustomContainer>
-    </Box>
+      </CustomContainer> */}
+    </div>
   );
 };
 
