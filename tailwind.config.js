@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        charcoal: '#1a191d',
+        charcoal: {
+          100: '#1a191d',
+          200: '#201f23',
+        },
       },
       fontFamily: {
         body: ['Poppins', 'sans-serif'],

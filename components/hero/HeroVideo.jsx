@@ -16,7 +16,7 @@ const HeroVideo = () => {
         loop
         className='pointer-events-none h-screen w-screen object-cover absolute -z-20'
       />
-      <div className='w-screen h-screen absolute bg-gradient-to-t from-charcoal to-transparent backdrop-blur-sm -z-10' />
+      <div className='w-screen h-screen absolute bg-gradient-to-t from-charcoal-100 to-transparent backdrop-blur-sm -z-10' />
     </>
   );
 };

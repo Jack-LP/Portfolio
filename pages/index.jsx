@@ -18,12 +18,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <Flex direction='column' gap='100px' my='20'>
+      <div className='flex flex-col gap-28 my-28'>
         <MyWork />
+        <MySkills />
         <AboutMe />
         <Contact />
-        <MySkills />
-      </Flex>
+      </div>
     </>
   );
 }

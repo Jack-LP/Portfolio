@@ -1,39 +1,42 @@
 import React from 'react';
 import projecData from '../../projectData.json';
-import { Heading, Flex, Divider, Grid } from '@chakra-ui/react';
-import CustomContainer from '../CustomContainer';
 import ProjectCard from './ProjectCard';
+import FeaturedCard from './FeaturedCard';
+
+const featured = projecData[0];
+const cards = projecData.slice(1, 3);
 
 const MyWork = () => {
   return (
-    <CustomContainer>
-      <Flex direction='column' gap='6' id='myWork'>
-        <Flex direction='column'>
-          <Heading size='xl'>My Work</Heading>
-          <Divider
-            w='110px'
-            border='3px'
-            borderColor='teal.500'
-            mt='-1'
-            zIndex='-1'
+    <div className='container mx-auto flex flex-col gap-8'>
+      <h2 className='font-body font-semibold text-5xl underline decoration-4 decoration-emerald-600'>
+        My Work
+      </h2>
+      <div className='flex flex-col gap-8'>
+        {featured ? (
+          <FeaturedCard
+            img={featured.img}
+            title={featured.title}
+            github={featured.github}
+            liveSite={featured.liveSite}
+            stack={featured.stack}
           />
-        </Flex>
-        <Grid templateColumns='repeat(2, 1fr)' gap='4'>
-          {projecData.map((item) => (
-            <ProjectCard
-              key={item.id}
-              img={item.img}
-              imgLg={item.imgLg}
-              title={item.title}
-              github={item.github}
-              liveSite={item.liveSite}
-              desc={item.desc}
-              stack={item.stack}
-            />
-          ))}
-        </Grid>
-      </Flex>
-    </CustomContainer>
+        ) : null}
+        {cards ? (
+          <div className='container mx-auto flex gap-10'>
+            {cards.map((project) => (
+              <ProjectCard
+                key={project.title}
+                img={project.img}
+                title={project.title}
+                github={project.github}
+                liveSite={project.liveSite}
+              />
+            ))}
+          </div>
+        ) : null}
+      </div>
+    </div>
   );
 };
 
