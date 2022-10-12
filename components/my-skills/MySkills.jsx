@@ -1,6 +1,4 @@
-import React from 'react';
-import { Flex, Heading, Divider, Image, Text } from '@chakra-ui/react';
-import CustomContainer from '../CustomContainer';
+import React, { useState } from 'react';
 
 const icons = [
   {
@@ -21,7 +19,7 @@ const icons = [
   },
   {
     src: 'chakraui.svg',
-    alt: 'Chakra UI',
+    alt: 'Chakra',
   },
   {
     src: 'sass.svg',
@@ -31,34 +29,40 @@ const icons = [
 
 const MySkills = () => {
   return (
-    <CustomContainer>
-      <Flex direction='column' gap='6' id='mySkills'>
-        <Flex direction='column'>
-          <Heading size='xl'>My Skills</Heading>
-          <Divider
-            w='110px'
-            border='3px'
-            borderColor='teal.500'
-            mt='-1'
-            zIndex='-1'
-          />
-        </Flex>
-        <Flex bg='charcoal.200' rounded='xl' p='4' justify='center' gap='6'>
+    <div className='flex flex-col gap-8'>
+      <h2 className='font-body font-semibold text-6xl self-center'>
+        Frontend Dev
+      </h2>
+      <div className='flex flex-col border-[3px] border-[#a3a3a3] w-2/3 mx-auto gap-4 p-6'>
+        <div className='font-mono text-lg '>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+          delectus totam praesentium provident architecto consectetur
+          temporibus, asperiores facilis impedit vel laborum veniam dignissimos
+          dolorum, dolorem illum? Perferendis culpa at vero, exercitationem,
+          sapiente magni eius sit a sequi ad nostrum assumenda?
+        </div>
+        <span className='font-mono text-xl font-semibold'>
+          Here&apos;s what I use:
+        </span>
+        <div className='flex border-t-2 justify-around pt-4 pb-12'>
           {icons.map((icon) => (
-            <Flex key={icon.alt} direction='column' gap='2' alignItems='center'>
-              <Image
+            <div
+              key={icon.alt}
+              className='flex flex-col gap-4 items-center relative group'
+            >
+              <img
                 src={`/img/icons/${icon.src}`}
                 alt={icon.alt}
-                w='16'
-                h='16'
-                filter='invert(1)'
+                className='invert w-14 group-hover:scale-110 transition duration-300 ease-out'
               />
-              <Text>{icon.alt}</Text>
-            </Flex>
+              <span className='p-1 px-3 bg-white/10 group-hover:bg-white/20 transition duration-300 ease-out rounded-lg font-mono absolute top-[70px]'>
+                {icon.alt}
+              </span>
+            </div>
           ))}
-        </Flex>
-      </Flex>
-    </CustomContainer>
+        </div>
+      </div>
+    </div>
   );
 };
 

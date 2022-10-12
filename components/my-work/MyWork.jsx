@@ -1,5 +1,6 @@
 import React from 'react';
 import projecData from '../../projectData.json';
+import SectionTemplate from '../SectionTemplate';
 import ProjectCard from './ProjectCard';
 import FeaturedCard from './FeaturedCard';
 
@@ -8,10 +9,13 @@ const cards = projecData.slice(1, 3);
 
 const MyWork = () => {
   return (
-    <div className='container mx-auto flex flex-col gap-8'>
-      <h2 className='font-body font-semibold text-5xl underline decoration-4 decoration-emerald-600'>
-        My Work
+    <div className='flex flex-col gap-8'>
+      <h2 className='font-body font-semibold text-8xl underline decoration-4 decoration-emerald-600'>
+        My <br /> Work
       </h2>
+      <span className='font-mono text-lg'>
+        Here are some projects I&apos;ve worked on:
+      </span>
       <div className='flex flex-col gap-8'>
         {featured ? (
           <FeaturedCard

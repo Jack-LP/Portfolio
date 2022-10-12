@@ -18,9 +18,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <div className='flex flex-col gap-28 my-28'>
-        <MyWork />
+      <div className='container mx-auto flex flex-col gap-72 my-64'>
         <MySkills />
+        <MyWork />
         <AboutMe />
         <Contact />
       </div>
