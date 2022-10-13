@@ -10,6 +10,7 @@ module.exports = {
         charcoal: {
           100: '#1a191d',
           200: '#201f23',
+          300: '#0e0e0e',
         },
       },
       fontFamily: {

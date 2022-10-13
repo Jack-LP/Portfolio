@@ -29,7 +29,7 @@ const icons = [
 
 const MySkills = () => {
   return (
-    <div className='flex flex-col gap-8'>
+    <div id='tech' className='flex flex-col gap-8'>
       <h2 className='font-body font-semibold text-6xl self-center'>
         Frontend Dev
       </h2>

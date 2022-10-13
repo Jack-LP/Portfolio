@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { Flex } from '@chakra-ui/react';
 import Hero from '../components/hero/Hero';
 import MyWork from '../components/my-work/MyWork';
 import AboutMe from '../components/about-me/AboutMe';
@@ -18,10 +17,9 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
-      <div className='container mx-auto flex flex-col gap-72 my-64'>
+      <div className='container mx-auto flex flex-col gap-72 mt-64'>
         <MySkills />
         <MyWork />
-        <AboutMe />
         <Contact />
       </div>
     </>
