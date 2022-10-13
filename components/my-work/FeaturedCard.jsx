@@ -27,7 +27,7 @@ const FeaturedCard = ({ img, title, github, liveSite, stack }) => {
             ))}
           </div>
         </div>
-        <button className='font-body p-2 bg-gradient-to-r from-emerald-600 to-teal-600 rounded w-1/2'>
+        <button className='font-body p-2 border-2 border-cyan-600 rounded w-1/2 hover:bg-cyan-600 transition duration-300 ease-in-out'>
           View
         </button>
         <div className='flex gap-2 items-center'>

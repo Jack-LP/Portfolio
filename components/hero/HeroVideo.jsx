@@ -10,7 +10,7 @@ const HeroVideo = () => {
     <>
       <video
         id='hero-vid'
-        src='video/hero-video.webm'
+        src='video/hero-vid.webm'
         autoPlay
         muted
         loop

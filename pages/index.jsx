@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Hero from '../components/hero/Hero';
 import MyWork from '../components/my-work/MyWork';
-import AboutMe from '../components/about-me/AboutMe';
 import Contact from '../components/contact/Contact';
-import MySkills from '../components/my-skills/MySkills';
+import About from '../components/about/About';
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
       </Head>
       <Hero />
       <div className='container mx-auto flex flex-col gap-72 mt-64'>
-        <MySkills />
+        <About />
         <MyWork />
         <Contact />
       </div>

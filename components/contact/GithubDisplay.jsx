@@ -58,7 +58,7 @@ const GithubDisplay = () => {
               <span className='text-xl font-bold'>{userData.name}</span>
               <a
                 href={userData.html_url}
-                className='text-emerald-600'
+                className='text-cyan-600'
               >{`@${userData.login}`}</a>
               <span className='text-white/70'>{`Joined ${userData.created_at.substr(
                 0,

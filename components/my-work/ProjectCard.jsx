@@ -31,7 +31,7 @@ const ProjectCard = ({ img, title, github, liveSite, desc, stack }) => {
       </div>
       <div className='flex flex-col p-6 items-start gap-4'>
         <h2 className='font-body capitalize text-2xl font-semibold'>{title}</h2>
-        <button className='font-body p-2 bg-gradient-to-r from-emerald-600 to-teal-600 rounded w-1/2'>
+        <button className='font-body p-2 border-2 border-cyan-600 rounded w-1/2 hover:bg-cyan-600 transition duration-300 ease-in-out'>
           View
         </button>
         <div className='flex gap-2 items-center'>
