@@ -11,7 +11,7 @@ const HeroVideo = () => {
       <video
         id='hero-vid'
         src='video/hero-video.webm'
-        autoplay
+        autoPlay
         muted
         loop
         className='pointer-events-none h-screen w-screen object-cover absolute -z-20'
