@@ -46,6 +46,7 @@ const GithubDisplay = () => {
 
   useEffect(() => {
     userData &&
+      userRepos &&
       setDisplay(
         <div className='w-11/12  xl:w-2/3 mx-auto flex flex-col gap-4 font-mono border-[3px] border-[#a3a3a3] p-10'>
           <div className='flex items-center gap-4'>
