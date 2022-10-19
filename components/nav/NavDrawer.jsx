@@ -24,7 +24,7 @@ const NavDrawer = ({ isOpen, setIsOpen }) => {
           </a>
         ))}
       </div>
-      <div className='flex flex-col gap-2 absolute bottom-4 font-mono text-white/60 items-center'>
+      <div className='flex flex-col gap-2 absolute bottom-16 font-mono text-white/60 items-center'>
         <span>
           <span className='font-body'>&copy;</span> Jack Paget 2022
         </span>
