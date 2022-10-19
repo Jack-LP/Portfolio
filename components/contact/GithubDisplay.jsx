@@ -47,7 +47,7 @@ const GithubDisplay = () => {
   useEffect(() => {
     userData &&
       setDisplay(
-        <div className='w-2/3 mx-auto flex flex-col gap-4 font-mono border-[3px] border-[#a3a3a3] p-10'>
+        <div className='w-11/12  xl:w-2/3 mx-auto flex flex-col gap-4 font-mono border-[3px] border-[#a3a3a3] p-10'>
           <div className='flex items-center gap-4'>
             <img
               src={userData.avatar_url}
@@ -69,27 +69,31 @@ const GithubDisplay = () => {
           <span className='font-semibold text-lg'>{userData.bio}</span>
           <div className='flex gap-6 justify-around bg-charcoal-200 p-8'>
             <div className='flex flex-col items-center gap-2'>
-              <span className='text-white/70'>Repos</span>
-              <span className='text-2xl font-semibold'>
+              <span className='text-white/70 text-sm md:text-md'>Repos</span>
+              <span className='text-lg md:text-2xl font-semibold'>
                 {userData.public_repos}
               </span>
             </div>
             <div className='flex flex-col items-center gap-2'>
-              <span className='text-white/70'>Followers</span>
-              <span className='text-2xl font-semibold'>
+              <span className='text-white/70 text-sm md:text-md'>
+                Followers
+              </span>
+              <span className='text-lg md:text-2xl font-semibold'>
                 {userData.followers}
               </span>
             </div>
             <div className='flex flex-col items-center gap-2'>
-              <span className='text-white/70'>Following</span>
-              <span className='text-2xl font-semibold'>
+              <span className='text-white/70 text-sm md:text-md'>
+                Following
+              </span>
+              <span className='text-lg md:text-2xl font-semibold'>
                 {userData.following}
               </span>
             </div>
           </div>
           <div className='flex flex-col gap-2'>
             <span>Recently updated:</span>
-            <div className='flex justify-between gap-4'>
+            <div className='flex flex-col lg:flex-row justify-between gap-4'>
               {userRepos.slice(0, 3).map((item) => (
                 <RepoCard
                   key={item.id}

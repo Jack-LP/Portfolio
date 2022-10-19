@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroVideo from './HeroVideo';
 import HeroText from './HeroText';
-import Navbar from '../Navbar';
+import Navbar from '../nav/Navbar';
 
 const Hero = () => {
   return (

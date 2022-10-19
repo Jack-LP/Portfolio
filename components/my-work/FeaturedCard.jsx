@@ -3,16 +3,16 @@ import { GithubFill, LinkOut } from 'akar-icons';
 
 const FeaturedCard = ({ img, title, github, liveSite, stack }) => {
   return (
-    <div className='flex bg-charcoal-200 rounded-lg group'>
-      <div className='w-1/2 rounded-l-lg overflow-hidden'>
+    <div className='flex flex-col md:flex-row bg-charcoal-200 rounded-lg group'>
+      <div className='md:w-1/2 rounded-t-lg md:rounded-l-lg overflow-hidden'>
         <img
           src={img}
           alt={title}
-          className='rounded-l-lg group-hover:scale-105 transition duration-200 ease-in-out'
+          className='rounded-t-lg md:rounded-l-lg group-hover:scale-105 transition duration-200 ease-in-out'
         />
       </div>
-      <div className='flex w-1/2 flex-col p-6 gap-4 justify-center items-center'>
-        <div className='flex flex-col gap-2 items-center'>
+      <div className='flex md:w-1/2 flex-col p-6 gap-4 justify-center items-start md:items-center'>
+        <div className='flex flex-col gap-2 md:items-center'>
           <h2 className='font-body capitalize text-4xl font-semibold'>
             {title}
           </h2>

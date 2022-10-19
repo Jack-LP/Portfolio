@@ -4,11 +4,6 @@ import GithubDisplay from './GithubDisplay';
 
 const contactLinks = [
   {
-    title: 'jackpaget1@gmail.com',
-    href: 'mailto:jackpaget1@gmail.com',
-    icon: <Envelope />,
-  },
-  {
     title: 'Jack-LP',
     href: 'https://www.github.com/jack-lp',
     icon: <GithubFill />,
@@ -18,22 +13,27 @@ const contactLinks = [
     href: 'https://www.github.com/jack-lp',
     icon: <LinkedinBoxFill />,
   },
+  {
+    title: 'jackpaget1@gmail.com',
+    href: 'mailto:jackpaget1@gmail.com',
+    icon: <Envelope />,
+  },
 ];
 
 const Contact = () => {
   return (
     <div
       id='contact'
-      className='bg-charcoal-300 flex flex-col gap-8 py-10'
+      className='bg-charcoal-300 flex flex-col gap-8 py-10 text-white'
       style={{
         boxShadow: '0 0 0 100vmax #0e0e0e',
         clipPath: 'inset(0 -100vmax)',
       }}
     >
-      <h2 className='font-body font-semibold text-8xl underline decoration-4 decoration-cyan-600 self-center'>
+      <h2 className='font-body font-semibold text-5xl md:text-6xl lg:text-7xl xl:text-8xl underline decoration-4 decoration-cyan-600 self-center'>
         Contact
       </h2>
-      <div className='flex justify-center gap-12'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12'>
         {contactLinks.map((link) => (
           <a
             key={link.title}

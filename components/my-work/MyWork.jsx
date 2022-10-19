@@ -8,14 +8,14 @@ const cards = projecData.slice(1, 3);
 
 const MyWork = () => {
   return (
-    <div id='work' className='flex flex-col gap-8'>
-      <h2 className='font-body font-semibold text-8xl underline decoration-4 decoration-cyan-600'>
-        My <br /> Work
+    <div id='work' className='flex flex-col gap-8 text-white'>
+      <h2 className='font-body self-center md:self-start font-semibold text-5xl md:text-6xl lg:text-7xl xl:text-8xl underline decoration-4 decoration-cyan-600'>
+        My <br className='hidden md:block' /> Work
       </h2>
-      <span className='font-mono text-lg'>
+      <span className='font-mono text-md md:text-lg self-center md:self-start text-center'>
         Here are some projects I&apos;ve worked on:
       </span>
-      <div className='flex flex-col gap-8'>
+      <div className='flex flex-col gap-12 md:gap-8'>
         {featured ? (
           <FeaturedCard
             img={featured.img}
@@ -26,7 +26,7 @@ const MyWork = () => {
           />
         ) : null}
         {cards ? (
-          <div className='container mx-auto flex gap-10'>
+          <div className='container mx-auto flex flex-col md:flex-row gap-12 md:gap-10'>
             {cards.map((project) => (
               <ProjectCard
                 key={project.title}
