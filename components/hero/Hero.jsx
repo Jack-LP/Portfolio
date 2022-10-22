@@ -5,7 +5,7 @@ import Navbar from '../nav/Navbar';
 
 const Hero = () => {
   return (
-    <div id='home' className='h-screen relative'>
+    <div id='home' className='h-screen relative overflow-x-hidden'>
       <HeroVideo />
       <Navbar />
       <HeroText />
