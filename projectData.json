@@ -25,5 +25,14 @@
     "liveSite": "https://react-pomodoro-jp.vercel.app/",
     "desc": "Audiophile is an e-commerce site focused on audio related products. The design was provided by Frontend Mentor and built with Tailwind CSS. Product data is stored in a json file and displayed on the corresponding product pages. A cart system is also present, using the React Context API which persists cart information within localStorage between page refreshes.",
     "stack": ["Vite", "Tailwind"]
+  },
+  {
+    "id": 4,
+    "title": "swatch",
+    "img": "img/swatch.jpg",
+    "github": "https://github.com/Jack-LP/swatch",
+    "liveSite": "https://swatch-jp.vercel.app/",
+    "desc": "Audiophile is an e-commerce site focused on audio related products. The design was provided by Frontend Mentor and built with Tailwind CSS. Product data is stored in a json file and displayed on the corresponding product pages. A cart system is also present, using the React Context API which persists cart information within localStorage between page refreshes.",
+    "stack": ["Vite", "Tailwind"]
   }
 ]

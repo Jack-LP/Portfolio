@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import FeaturedCard from './FeaturedCard';
 
 const featured = projecData[0];
-const cards = projecData.slice(1, 3);
+const cards = projecData.slice(1, 4);
 
 const MyWork = () => {
   return (

@@ -4,10 +4,8 @@ import { getFromStorage } from '../../utilities/getFromStorage';
 import RepoCard from './RepoCard';
 
 const GithubDisplay = () => {
-  const [userData, setUserData] = useState(getFromStorage('userData') || null);
-  const [userRepos, setUserRepos] = useState(
-    getFromStorage('userRepos') || null
-  );
+  const [userData, setUserData] = useState(null);
+  const [userRepos, setUserRepos] = useState(null);
   const [display, setDisplay] = useState(null);
 
   useEffect(() => {
@@ -30,19 +28,9 @@ const GithubDisplay = () => {
       setUserRepos(result.data);
     };
 
-    if (
-      !localStorage.getItem('userData') ||
-      !localStorage.getItem('userRepos')
-    ) {
-      fetchUserData();
-      fetchUserRepos();
-    }
+    fetchUserData();
+    fetchUserRepos();
   }, []);
-
-  useEffect(() => {
-    userData && localStorage.setItem('userData', JSON.stringify(userData));
-    userRepos && localStorage.setItem('userRepos', JSON.stringify(userRepos));
-  }, [userData, userRepos]);
 
   useEffect(() => {
     userData &&
