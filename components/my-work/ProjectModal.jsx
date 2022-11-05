@@ -18,7 +18,7 @@ const ProjectModal = ({ modal, setModal }) => {
   return modal.isOpen ? (
     <div
       onClick={() => setModal((prev) => ({ ...prev, isOpen: false }))}
-      className='fixed z-20 inset-0 bg-charcoal-100/50 backdrop-blur-md flex items-center justify-center font-body'
+      className='fixed z-20 inset-0 bg-charcoal-100/40 backdrop-blur-md flex items-center justify-center font-body'
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -68,12 +68,22 @@ const ProjectModal = ({ modal, setModal }) => {
             {modalData.desc}
           </p>
           <div className='flex gap-2 items-center'>
-            <a className='w-full' href={modalData.github}>
+            <a
+              className='w-full'
+              href={modalData.github}
+              target='_blank'
+              rel='noreferrer'
+            >
               <button className='w-full bg-charcoal-100 flex items-center justify-center p-2 xl:p-3 rounded-md'>
                 <GithubFill size={20} />
               </button>
             </a>
-            <a className='w-full' href={modalData.liveSite}>
+            <a
+              className='w-full'
+              href={modalData.liveSite}
+              target='_blank'
+              rel='noreferrer'
+            >
               <button className='w-full bg-charcoal-100 flex items-center justify-center p-2 xl:p-3 rounded-md'>
                 <LinkOut size={20} />
               </button>

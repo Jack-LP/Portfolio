@@ -38,6 +38,8 @@ const Contact = () => {
           <a
             key={link.title}
             href={link.href}
+            target='_blank'
+            rel='noreferrer'
             className='flex items-center gap-2 font-mono'
           >
             {link.icon}

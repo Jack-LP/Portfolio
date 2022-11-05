@@ -16,12 +16,16 @@ const FeaturedCard = ({
         <img
           src={img}
           alt={title}
+          onClick={() => setModal({ isOpen: true, id: projectId })}
           className='rounded-t-lg md:rounded-l-lg group-hover:scale-105 transition duration-200 ease-in-out'
         />
       </div>
       <div className='flex md:w-1/2 flex-col p-6 gap-4 justify-center items-start md:items-center'>
         <div className='flex flex-col gap-2 md:items-center'>
-          <h2 className='font-body capitalize text-4xl font-semibold'>
+          <h2
+            onClick={() => setModal({ isOpen: true, id: projectId })}
+            className='font-body capitalize text-4xl font-semibold cursor-pointer'
+          >
             {title}
           </h2>
           <div className='flex gap-2'>
