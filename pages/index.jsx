@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Jack Paget - Frontend Developer</title>
         <meta
           name='description'
           content="Jack Paget's web development portfolio"
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.svg' />
       </Head>
       <Hero />
       <div className='container mx-auto flex flex-col gap-72 mt-64'>

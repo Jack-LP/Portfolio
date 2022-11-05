@@ -6,4 +6,10 @@
   html {
     -webkit-tap-highlight-color: transparent;
   }
+  ::selection {
+    background: #0891b2;
+  }
+  ::-moz-selection {
+    background: #0891b2;
+  }
 }
