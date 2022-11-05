@@ -1,7 +1,15 @@
 import React from 'react';
 import { GithubFill, LinkOut } from 'akar-icons';
 
-const FeaturedCard = ({ img, title, github, liveSite, stack }) => {
+const FeaturedCard = ({
+  projectId,
+  img,
+  title,
+  github,
+  liveSite,
+  stack,
+  setModal,
+}) => {
   return (
     <div className='flex flex-col md:flex-row bg-charcoal-200 rounded-lg group'>
       <div className='md:w-1/2 rounded-t-lg md:rounded-l-lg overflow-hidden'>
@@ -27,7 +35,10 @@ const FeaturedCard = ({ img, title, github, liveSite, stack }) => {
             ))}
           </div>
         </div>
-        <button className='font-body p-2 border-2 border-cyan-600 rounded w-1/2 hover:bg-cyan-600 transition duration-300 ease-in-out'>
+        <button
+          onClick={() => setModal({ isOpen: true, id: projectId })}
+          className='font-body p-2 border-2 border-cyan-600 rounded w-1/2 hover:bg-cyan-600 transition duration-300 ease-in-out'
+        >
           View
         </button>
         <div className='flex gap-2 items-center'>
