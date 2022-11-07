@@ -45,7 +45,7 @@ const ProjectModal = ({ modal, setModal }) => {
         </div>
         <img
           className='w-full rounded-md self-center'
-          src={modalData.img}
+          src={modalData.gif}
           alt={modalData.title}
         />
         <div className='flex flex-col gap-2'>
