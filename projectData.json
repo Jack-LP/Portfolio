@@ -1,6 +1,16 @@
 [
   {
     "id": 1,
+    "title": "novelty",
+    "img": "img/novelty.jpg",
+    "gif": "img/novelty-gif.gif",
+    "github": "https://github.com/Jack-LP/novelty",
+    "liveSite": "https://novelty-jp.vercel.app",
+    "desc": "The purpose of novelty is to search for, save and view books using the google books API. The home screen presents the user with a search field, this will query the API and return 5 books ordered by relevance. From here you can view a title by clicking on it which takes you to a dynamic route providing additional information. Here you can view the description, page count, word count and estimated reading time. You can also save a book to your bookshelf for easier access. Reading time is estimated using the average reading speed, this can be changed by navigating to the speed test page in which instructions are provided and a test given to measure your reading pace. This value is then stored and used on all titles, giving the user an accurate estimation. There is also a user page which allows for simple customisation; an avatar and username can be submitted and displayed. All values are stored in local storage and persist across page refreshes.",
+    "stack": ["NextJS", "Tailwind", "API"]
+  },
+  {
+    "id": 2,
     "title": "mintab",
     "img": "img/mintab.jpg",
     "gif": "img/mintab-gif.gif",
@@ -10,17 +20,17 @@
     "stack": ["NextJS", "Chakra UI"]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "game grid",
     "img": "img/gamegrid.jpg",
     "gif": "img/gamegrid-gif.gif",
     "github": "https://github.com/Jack-LP/Game-Grid",
     "liveSite": "https://gamegrid.vercel.app",
     "desc": "Game Grid is an e-commerce site and directory of free-to-play games. Data is pulled from the 'freetogame' API and displayed through various pages using React Router. Clicking on a game displays additional information within its own dynamic route. Games can also be searched for and filtered by genre.",
-    "stack": ["React", "Chakra UI", "React Router", "Freetogame API"]
+    "stack": ["React", "React Router", "API"]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "pomodoro",
     "img": "img/pomodoro.jpg",
     "gif": "img/pomodoro-gif.gif",
@@ -30,7 +40,7 @@
     "stack": ["Vite", "React", "Tailwind"]
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "swatch",
     "img": "img/swatch.jpg",
     "gif": "img/swatch-gif.gif",

@@ -8,6 +8,7 @@ const ProjectCard = ({
   title,
   github,
   liveSite,
+  stack,
   modal,
   setModal,
 }) => {
@@ -30,6 +31,16 @@ const ProjectCard = ({
           >
             {title}
           </h2>
+          <div className='flex gap-2 flex-wrap'>
+            {stack.map((item) => (
+              <span
+                key={item}
+                className='p-1 px-3 bg-white/10 rounded-lg font-mono text-xs'
+              >
+                {item}
+              </span>
+            ))}
+          </div>
           <button
             onClick={() => setModal({ isOpen: true, id: projectId })}
             className='font-body p-2 border-2 border-cyan-600 rounded w-1/2 hover:bg-cyan-600 transition duration-300 ease-in-out'

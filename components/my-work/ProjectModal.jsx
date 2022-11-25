@@ -4,11 +4,11 @@ import {
   GithubFill,
   LinkOut,
   Cross,
-  TriangleFill,
   Home,
   GameController,
   Clock,
   Image,
+  BookOpen,
 } from 'akar-icons';
 
 const ProjectModal = ({ modal, setModal }) => {
@@ -26,15 +26,15 @@ const ProjectModal = ({ modal, setModal }) => {
       >
         <div className='flex justify-between items-center text-xs text-neutral-300 font-mono'>
           {modalData.id === 1 ? (
-            <Home size={14} />
+            <BookOpen size={14} />
           ) : modalData.id === 2 ? (
-            <GameController size={14} />
+            <Home size={14} />
           ) : modalData.id === 3 ? (
-            <Clock size={14} />
+            <GameController size={14} />
           ) : modalData.id === 4 ? (
-            <Image size={14} />
+            <Clock size={14} />
           ) : (
-            <TriangleFill size={14} />
+            <Image size={14} />
           )}
           <span>project-{modalData.title.replace(/\s+/g, '-')}</span>
           <Cross

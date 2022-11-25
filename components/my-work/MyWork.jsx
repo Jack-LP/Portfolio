@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import projecData from '../../projectData.json';
 import ProjectCard from './ProjectCard';
 import FeaturedCard from './FeaturedCard';
-import ProjectModal from './ProjectModal';
 
 const featured = projecData[0];
-const cards = projecData.slice(1, 4);
+const cards = projecData.slice(1, 5);
 
 const MyWork = () => {
   const [modal, setModal] = useState({ isOpen: false, id: 0 });
@@ -50,6 +49,7 @@ const MyWork = () => {
                   title={project.title}
                   github={project.github}
                   liveSite={project.liveSite}
+                  stack={project.stack}
                   modal={modal}
                   setModal={setModal}
                 />
