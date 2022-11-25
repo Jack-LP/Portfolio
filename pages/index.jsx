@@ -15,6 +15,7 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon-jp.svg?v=2' />
       </Head>
+      {/* {(document.body.style.overflow = 'hidden')} */}
       <Hero />
       <div className='container mx-auto flex flex-col gap-72 mt-64'>
         <About />

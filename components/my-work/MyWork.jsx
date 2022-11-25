@@ -13,7 +13,7 @@ const MyWork = () => {
     if (modal.isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'scroll';
+      document.body.style.overflowY = 'scroll';
     }
   }, [modal]);
 
