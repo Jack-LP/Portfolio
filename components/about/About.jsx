@@ -33,6 +33,31 @@ const About = () => {
       <h2 className='font-body font-semibold text-5xl md:text-6xl lg:text-7xl xl:text-8xl underline decoration-4 decoration-cyan-600 self-center'>
         Frontend Dev
       </h2>
+<<<<<<< HEAD
+      <div className='flex flex-col border-[3px] border-[#a3a3a3] w-11/12 xl:w-2/3 mx-auto gap-6 p-6'>
+        <div className='font-mono text-lg leading-7'>
+          As a{' '}
+          <span className='underline decoration-cyan-600 decoration-2'>
+            self-taught
+          </span>{' '}
+          web developer with a passion for front-end technologies, I have honed
+          my skills in{' '}
+          <span className='underline decoration-cyan-600 decoration-2'>
+            HTML, CSS, and Javascript
+          </span>{' '}
+          through hands-on projects and self-directed learning. With a keen eye
+          for detail and a dedication to creating{' '}
+          <span className='underline decoration-cyan-600 decoration-2'>
+            intuitive
+          </span>{' '}
+          user experiences, I am eager to bring my skills to a junior web
+          development position. This portfolio showcases a selection of my
+          projects, demonstrating my ability to create{' '}
+          <span className='underline decoration-cyan-600 decoration-2'>
+            responsive, visually appealing, and functional
+          </span>{' '}
+          websites.
+=======
       <div className='flex flex-col border-[3px] border-[#a3a3a3] w-11/12 xl:w-2/3 mx-auto gap-4 p-6'>
         <div className='font-mono text-lg '>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
@@ -40,6 +65,7 @@ const About = () => {
           temporibus, asperiores facilis impedit vel laborum veniam dignissimos
           dolorum, dolorem illum? Perferendis culpa at vero, exercitationem,
           sapiente magni eius sit a sequi ad nostrum assumenda?
+>>>>>>> c94e1defcb8a9c2b13b0ceab5ce9d5a8cc27bfb2
         </div>
         <span className='font-mono text-xl font-semibold'>
           Here&apos;s what I use:
