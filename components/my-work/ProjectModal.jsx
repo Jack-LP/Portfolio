@@ -6,7 +6,7 @@ import {
   Cross,
   Home,
   GameController,
-  Clock,
+  Edit,
   Image,
   BookOpen,
 } from 'akar-icons';
@@ -32,7 +32,7 @@ const ProjectModal = ({ modal, setModal }) => {
           ) : modalData.id === 3 ? (
             <GameController size={14} />
           ) : modalData.id === 4 ? (
-            <Clock size={14} />
+            <Edit size={14} />
           ) : (
             <Image size={14} />
           )}

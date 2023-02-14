@@ -31,12 +31,12 @@
   },
   {
     "id": 4,
-    "title": "pomodoro",
-    "img": "img/pomodoro.jpg",
-    "gif": "img/pomodoro-gif.gif",
-    "github": "https://github.com/Jack-LP/pomodoro",
-    "liveSite": "https://react-pomodoro-jp.vercel.app/",
-    "desc": "This is a simple pomodoro timer app built with React and Tailwind CSS. The three timing intervals are customisable in the settings panel, in which the theme and font of the app can also be changed.",
+    "title": "markdown",
+    "img": "img/markdown.jpg",
+    "gif": "img/markdown-gif.gif",
+    "github": "https://github.com/Jack-LP/markdown-editor",
+    "liveSite": "https://markdownedit.vercel.app/",
+    "desc": "This is a simple, lightweight text editor built with markdown in mind. It consists of two main panels, one to edit text in and another to view the markdown output. Both markdown(.md) and text(.txt) files can be imported and modified within the editor, as well as exported and saved to your device. Any documents inside the editor will remain and persist through site refreshes. The editor is also fully responsive and works as intended on all screen sizes and devices.",
     "stack": ["Vite", "React", "Tailwind"]
   },
   {
