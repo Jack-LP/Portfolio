@@ -11,6 +11,7 @@ export default {
         },
         plum: {
           100: '#a78bfa',
+          200: '#7C3AED',
         },
       },
       fontFamily: {
