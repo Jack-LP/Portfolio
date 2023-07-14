@@ -18,6 +18,14 @@ export default {
         space: ['Space Grotesk', 'sans-serif'],
         spaceMono: ['Space Mono', 'mono'],
       },
+      keyframes: {
+        bounceSmall: {
+          '50%': { transform: 'translateY(-10%)' },
+        },
+      },
+      animation: {
+        bounceSmall: 'bounceSmall 1s infinite ease',
+      },
     },
   },
   plugins: [],

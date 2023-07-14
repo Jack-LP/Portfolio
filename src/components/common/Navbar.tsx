@@ -1,3 +1,5 @@
+import Moon from 'pixelarticons/svg/moon.svg';
+
 const Navbar = () => {
   const navLinks = ['About', 'Projects', 'Contact'];
 
@@ -16,8 +18,8 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button className='border-2 rounded-md w-8 h-8 border-dark-100 ml-auto'>
-        N
+      <button className='border-2 rounded-md w-8 h-8 border-dark-100 ml-auto flex items-center justify-center'>
+        <img src={Moon} className='w-4 h-4 invert' alt='' />
       </button>
     </div>
   );
