@@ -4,7 +4,7 @@ import GithubDisplay from './GithubDisplay';
 
 const ContactMain = () => {
   return (
-    <div className='flex flex-col gap-4'>
+    <div id='contact' className='flex flex-col gap-4'>
       <Heading>Contact</Heading>
       <ContactLinks />
       <GithubDisplay />

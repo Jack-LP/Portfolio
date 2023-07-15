@@ -9,7 +9,7 @@ const cards = projectData.slice(1, 5);
 
 const ProjectMain = () => {
   return (
-    <div className='flex items-center justify-center'>
+    <div id='projects' className='flex items-center justify-center pt-20'>
       <div className='flex flex-col gap-4 w-full'>
         <Heading>Projects</Heading>
         <div className='grid grid-cols-4 grid-rows-2 gap-5'>
