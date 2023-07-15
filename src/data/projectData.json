@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "novelty",
+    "img": "img/novelty.jpg",
+    "gif": "img/novelty-gif.gif",
+    "github": "https://github.com/Jack-LP/novelty",
+    "liveSite": "https://novelty-jp.vercel.app",
+    "desc": "The purpose of novelty is to search for, save and view books using the google books API. The home screen presents the user with a search field, this will query the API and return 5 books ordered by relevance. From here you can view a title by clicking on it which takes you to a dynamic route providing additional information. Here you can view the description, page count, word count and estimated reading time. You can also save a book to your bookshelf for easier access. Reading time is estimated using the average reading speed, this can be changed by navigating to the speed test page in which instructions are provided and a test given to measure your reading pace. This value is then stored and used on all titles, giving the user an accurate estimation. There is also a user page which allows for simple customisation; an avatar and username can be submitted and displayed. All values are stored in local storage and persist across page refreshes.",
+    "stack": ["NextJS", "Tailwind", "API"]
+  },
+  {
+    "id": 2,
+    "title": "mintab",
+    "img": "img/mintab.jpg",
+    "gif": "img/mintab-gif.gif",
+    "github": "https://github.com/Jack-LP/mintab",
+    "liveSite": "https://mintab.vercel.app",
+    "desc": "Mintab is a customisable homepage for your browser, providing quick access to bookmarked sites. Every display component is customised through a settings drawer built with Chakra UI. User settings are managed through state and context, and then stored in localStorage to persist through page refreshes.",
+    "stack": ["NextJS", "Chakra UI"]
+  },
+  {
+    "id": 3,
+    "title": "game grid",
+    "img": "img/gamegrid.jpg",
+    "gif": "img/gamegrid-gif.gif",
+    "github": "https://github.com/Jack-LP/Game-Grid",
+    "liveSite": "https://gamegrid.vercel.app",
+    "desc": "Game Grid is an e-commerce site and directory of free-to-play games. Data is pulled from the 'freetogame' API and displayed through various pages using React Router. Clicking on a game displays additional information within its own dynamic route. Games can also be searched for and filtered by genre.",
+    "stack": ["React", "React Router", "API"]
+  },
+  {
+    "id": 4,
+    "title": "markdown",
+    "img": "img/markdown.jpg",
+    "gif": "img/markdown-gif.gif",
+    "github": "https://github.com/Jack-LP/markdown-editor",
+    "liveSite": "https://markdownedit.vercel.app/",
+    "desc": "This is a simple, lightweight text editor built with markdown in mind. It consists of two main panels, one to edit text in and another to view the markdown output. Both markdown(.md) and text(.txt) files can be imported and modified within the editor, as well as exported and saved to your device. Any documents inside the editor will remain and persist through site refreshes. The editor is also fully responsive and works as intended on all screen sizes and devices.",
+    "stack": ["Vite", "React", "Tailwind"]
+  },
+  {
+    "id": 5,
+    "title": "swatch",
+    "img": "img/swatch.jpg",
+    "gif": "img/swatch-gif.gif",
+    "github": "https://github.com/Jack-LP/swatch",
+    "liveSite": "https://swatch-jp.vercel.app/",
+    "desc": "Swatch is a design tool used to create palettes and extract colors from an image. It allows image uploads via direct link or files and outputs a palette of colors. You can click on any of the generated colors to copy the hex value to your clipboard.",
+    "stack": ["Vite", "React", "Tailwind"]
+  }
+]

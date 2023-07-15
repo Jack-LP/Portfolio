@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='min-h-screen w-screen bg-dark-300 text-white font-space px-96 flex flex-col gap-96 pb-28 overflow-hidden'>
+      <div className='min-h-screen w-screen bg-dark-300 text-white font-space px-96 flex flex-col gap-80 pb-28 overflow-hidden'>
         <HeroMain />
         <AboutMain />
         <ProjectMain />
