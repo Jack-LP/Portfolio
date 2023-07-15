@@ -1,7 +1,7 @@
 import Button from '../common/Button';
 
 const FeaturedCard = () => {
-  const stack = ['test', 'test', 'test'];
+  const stack = ['test1', 'test2', 'test3'];
 
   return (
     <div className='col-span-4 bg-dark-200 border-2 border-dark-100 rounded-md flex gap-5 h-[300px] group'>

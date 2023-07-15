@@ -1,6 +1,6 @@
 import Button from '../common/Button';
 const ProjectCard = () => {
-  const stack = ['test', 'test', 'test'];
+  const stack = ['test1', 'test2', 'test3'];
 
   return (
     <div className='bg-dark-200 border-2 border-dark-100 rounded-md flex flex-col h-[300px] group'>
