@@ -1,6 +1,8 @@
 const AboutCard = () => {
+  const skills = ['javascript', 'react', 'tailwind', 'git', 'sass'];
+
   return (
-    <div className='bg-dark-200 border-2 border-dark-100 rounded-md p-5 font-spaceMono'>
+    <div className='flex flex-col gap-5 bg-dark-200 border-2 border-dark-100 rounded-md p-5 font-spaceMono'>
       <p>
         As a self-taught web developer with a passion for front-end
         technologies, I have honed my skills in HTML, CSS, and Javascript
@@ -10,6 +12,21 @@ const AboutCard = () => {
         portfolio showcases a selection of my projects, demonstrating my ability
         to create responsive, visually appealing, and functional websites.
       </p>
+      <div className='w-full h-[2px] bg-dark-100'></div>
+      <div className='flex justify-around'>
+        {skills.map((item) => (
+          <div className='flex flex-col items-center gap-2 group'>
+            <img
+              src={`/img/icons/${item}.svg`}
+              className='w-12 invert group-hover:scale-110 transition duration-300 ease-out'
+              alt=''
+            />
+            <span className='border-2 border-dark-100 px-2 rounded-md capitalize'>
+              {item}
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
