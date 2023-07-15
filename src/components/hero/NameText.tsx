@@ -2,7 +2,7 @@ import Button from '../common/Button';
 
 const NameText = () => {
   return (
-    <div className='flex flex-col gap-2 text-center items-center'>
+    <div className='flex flex-col gap-2 z-10'>
       <h1 className='text-9xl uppercase font-bold'>Jack Paget</h1>
       <h2 className='text-xl font-medium text-white/50'>
         Front-end developer working with the latest tech.

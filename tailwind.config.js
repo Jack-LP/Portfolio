@@ -26,6 +26,9 @@ export default {
       animation: {
         bounceSmall: 'bounceSmall 1s infinite ease',
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
     },
   },
   plugins: [],
