@@ -9,10 +9,10 @@ const cards = projectData.slice(1, 5);
 
 const ProjectMain = () => {
   return (
-    <div id='projects' className='flex items-center justify-center pt-20'>
+    <div id='projects' className='flex items-center justify-center'>
       <div className='flex flex-col gap-4 w-full'>
         <Heading>Projects</Heading>
-        <div className='grid grid-cols-4 grid-rows-2 gap-5'>
+        <div className='flex flex-col gap-6'>
           <FeaturedCard
             projectId={featured.id}
             img={featured.img}
@@ -21,17 +21,19 @@ const ProjectMain = () => {
             liveSite={featured.liveSite}
             stack={featured.stack}
           />
-          {cards.map((project) => (
-            <ProjectCard
-              projectId={project.id}
-              key={project.title}
-              img={project.img}
-              title={project.title}
-              github={project.github}
-              liveSite={project.liveSite}
-              stack={project.stack}
-            />
-          ))}
+          <div className='flex flex-col justify-between md:flex-row gap-6'>
+            {cards.map((project) => (
+              <ProjectCard
+                projectId={project.id}
+                key={project.title}
+                img={project.img}
+                title={project.title}
+                github={project.github}
+                liveSite={project.liveSite}
+                stack={project.stack}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

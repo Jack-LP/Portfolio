@@ -43,6 +43,7 @@ const GithubDisplay = () => {
           <a
             href={userData.html_url}
             className='text-plum-100'
+            target='_blank'
           >{`@${userData.login}`}</a>
           <span className='text-white/70'>{`Joined ${userData.created_at.substr(
             0,

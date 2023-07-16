@@ -13,7 +13,7 @@ const AboutCard = () => {
         to create responsive, visually appealing, and functional websites.
       </p>
       <div className='w-full h-[2px] bg-dark-100'></div>
-      <div className='flex justify-around'>
+      <div className='flex flex-wrap justify-around gap-10'>
         {skills.map((item) => (
           <div className='flex flex-col items-center gap-2 group'>
             <img

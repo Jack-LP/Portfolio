@@ -2,6 +2,7 @@ const GithubCard = ({ title, desc, lang, link }) => {
   return (
     <a
       href={link}
+      target='_blank'
       className='flex flex-col gap-2 bg-dark-300 rounded-md w-full p-2'
     >
       <div className='flex gap-2 items-center'>

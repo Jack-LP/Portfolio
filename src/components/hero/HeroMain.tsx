@@ -21,7 +21,7 @@ const HeroMain = () => {
     >
       <div style={gradientStyle} className='mix-blend-screen absolute'></div>
       <NameText />
-      <div className='flex items-center justify-center absolute top-[900px] w-full'>
+      <div className='flex bottom-10 absolute left-1/2 -translate-x-1/2'>
         <a href='#about' className='w-12'>
           <lottie-player
             src='https://lottie.host/071990b9-2fb7-4e9f-9931-592361967780/uHAGXBjMjK.json'

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Github, List } from 'react-bootstrap-icons';
 import NavDrawer from './NavDrawer';
+import BackToTop from './BackToTop';
 
 const Navbar = () => {
   const [showDrawer, setShowDrawer] = useState(false);
@@ -20,6 +21,7 @@ const Navbar = () => {
 
   return (
     <>
+      <BackToTop scrolled={scrolled} />
       {showDrawer ? (
         <NavDrawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
       ) : null}
@@ -28,7 +30,7 @@ const Navbar = () => {
           scrolled
             ? 'py-2 bg-dark-300/90 backdrop-blur-md border-b-[1px] border-dark-100'
             : 'py-5 border-transparent'
-        } flex z-20 gap-10 items-center text-white font-space fixed w-full px-3 2xl:px-96 duration-150`}
+        } flex z-20 gap-10 items-center text-white font-space fixed w-full px-3 md:px-10 xl:px-72 2xl:px-96 duration-150`}
       >
         <a href='#home' className='hover:text-plum-100 transition duration-150'>
           Jack Paget
@@ -47,6 +49,7 @@ const Navbar = () => {
           href='https://github.com/Jack-LP/Portfolio'
           target='_blank'
           className='ml-auto hidden md:block'
+          title='View source'
         >
           <Github className='w-6 h-6 text-white/50 hover:text-plum-100 transition duration-150' />
         </a>

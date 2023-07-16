@@ -19,18 +19,21 @@ const FeaturedCard = ({
   stack,
 }: Props) => {
   return (
-    <div className='col-span-4 bg-dark-200 border-2 border-dark-100 rounded-md flex gap-5 h-[300px] group'>
-      <div className='overflow-hidden w-1/2 rounded-l-md'>
+    <div className='bg-dark-200 border-2 flex flex-col md:flex-row border-dark-100 rounded-md md:gap-5 h-[300px] md:h-[320px] group'>
+      <div className='overflow-hidden w-full md:w-1/2 h-1/2 md:h-full rounded-t-md md:rounded-l-md md:rounded-tr-none'>
         <img
           src={img}
           alt={title}
-          className='w-full h-full object-cover rounded-l-md group-hover:scale-105 transition duration-200 ease-in-out'
+          className='w-full h-full object-cover rounded-t-md md:rounded-l-md md:rounded-tr-none group-hover:scale-105 transition duration-200 ease-in-out'
         />
       </div>
-      <div className='flex flex-col gap-3 justify-center'>
-        <h2 className='text-3xl font-medium capitalize'>{title}</h2>
+      <div className='flex flex-col p-3 gap-3 items-start justify-center'>
+        <h2 className='text-xl md:text-3xl font-medium capitalize'>{title}</h2>
         <div className='flex flex-col border-l-2 border-dark-100 pl-3 gap-3'>
-          <Button>View</Button>
+          <div className='hidden md:block w-full'>
+            <Button>View</Button>
+          </div>
+
           <div className='flex gap-2 flex-wrap'>
             {stack.map((item) => (
               <span

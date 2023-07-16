@@ -16,7 +16,7 @@ const ContactLinks = () => {
   ];
 
   return (
-    <div className='flex gap-3 font-spaceMono'>
+    <div className='flex flex-col md:flex-row gap-3 font-spaceMono'>
       {contactLinks.map((item) => (
         <a
           key={item.text}
