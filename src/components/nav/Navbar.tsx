@@ -33,7 +33,7 @@ const Navbar = () => {
         } flex z-20 gap-10 items-center text-white font-space fixed w-full px-3 md:px-10 xl:px-72 2xl:px-96 duration-150`}
       >
         <a href='#home' className='hover:text-plum-100 transition duration-150'>
-          Jack Paget
+          JP
         </a>
         <ul className='gap-5 text-white/50 hidden md:flex'>
           {navLinks.map((link) => (

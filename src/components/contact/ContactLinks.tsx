@@ -16,13 +16,13 @@ const ContactLinks = () => {
   ];
 
   return (
-    <div className='flex flex-col md:flex-row gap-3 font-spaceMono'>
+    <div className='flex flex-col md:flex-row gap-3 font-spaceMono text-white'>
       {contactLinks.map((item) => (
         <a
           key={item.text}
           href={item.link}
           target='_blank'
-          className='flex gap-2 items-center'
+          className='flex gap-2 items-center hover:text-white/50 transition duration-150'
         >
           {item.icon}
           <p>{item.text}</p>
